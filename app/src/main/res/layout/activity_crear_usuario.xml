@@ -8,110 +8,125 @@
    <ScrollView
        android:layout_width="fill_parent"
        android:layout_height="fill_parent"
-       android:paddingTop="30dp"
+
        android:background="#1967F4">
        <LinearLayout
            android:layout_width="fill_parent"
            android:layout_height="fill_parent"
            android:orientation="vertical">
+           <LinearLayout
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:paddingTop="20dp"
+               android:background="@drawable/bg">
            <ImageView
                android:layout_width="150dp"
                android:layout_height="150dp"
                android:id="@+id/logo"
-               android:src="@drawable/logo"
+               android:src="@drawable/logo200"
                android:layout_marginBottom="20dp"
                android:layout_gravity="center_horizontal"/>
+           </LinearLayout>
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="300dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
         android:paddingTop="40dp"
         android:layout_marginBottom="30dp"
         android:layout_gravity="center_horizontal"
         android:background="#FFFFFF">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Usuario" />
         <EditText
+            android:maxLines="1" android:singleLine="true"
+            android:hint="Nombres"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="17dp"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/R_nombre_ET"
+            android:background="@drawable/rounded_edittext"/>
+        <EditText
+            android:maxLines="1" android:singleLine="true"
+            android:hint="Apelidos"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="17dp"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:id="@+id/R_apellido_ET"
+            android:background="@drawable/rounded_edittext"/>
+        <EditText
+            android:maxLines="1" android:singleLine="true"
+            android:hint="Usuario"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="17dp"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
             android:id="@+id/R_nombreUsuario_ET"
-            android:gravity="center_horizontal"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Contraseña"/>
+            android:background="@drawable/rounded_edittext"/>
         <EditText
+            android:maxLines="1" android:singleLine="true"
+            android:hint="Contraseña"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="17dp"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:id="@+id/R_password_ET"
             android:inputType="textPassword"
-            android:gravity="center_horizontal"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Repetir Contraseña"/>
+            android:background="@drawable/rounded_edittext"/>
+
         <EditText
+            android:maxLines="1" android:singleLine="true"
+            android:hint="Repetir Contraseña"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="17dp"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:id="@+id/R_passwordConfirmation_ET"
             android:inputType="textPassword"
-            android:gravity="center_horizontal"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Email"/>
+            android:background="@drawable/rounded_edittext"/>
         <EditText
+            android:maxLines="1" android:singleLine="true"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="17dp"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:id="@+id/R_email_ET"
-            android:gravity="center_horizontal"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Nombres"/>
-        <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/R_nombre_ET"
-            android:gravity="center_horizontal"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Apelidos"/>
-        <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/R_apellido_ET"
-            android:gravity="center_horizontal"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Telefono"/>
-        <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/R_telefono_ET"
-            android:gravity="center_horizontal"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cedula"/>
-        <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/R_cedula_ET"
-            android:gravity="center_horizontal"/>
-        <Button
+            android:background="@drawable/rounded_edittext"/>
 
+        <EditText
+            android:maxLines="1" android:singleLine="true"
+            android:hint="Telefono"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="17dp"
+            android:inputType="number"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:id="@+id/R_telefono_ET"
+            android:background="@drawable/rounded_edittext"/>
+        <EditText
+            android:maxLines="1" android:singleLine="true"
+            android:hint="Cedula"
+            android:layout_marginTop="20dp"
+            android:inputType="number"
+            android:paddingLeft="17dp"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:id="@+id/R_cedula_ET"
+            android:background="@drawable/rounded_edittext"/>
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:id="@+id/R_registrarse_BT"
             android:text="Registrarse"
+            android:background="@drawable/button"
+            android:textColor="#1967F4"
             android:layout_gravity="center_horizontal"/>
 
     </LinearLayout>
